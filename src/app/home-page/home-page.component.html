@@ -1,0 +1,50 @@
+
+<html>
+<body>
+  <div class="outer">
+    <div class="detail">
+      <h1 class="colorchange">WEATHER FORECASTING</h1>
+
+  <mat-form-field >
+    <mat-label>Select Country</mat-label>
+    <mat-select (selectionChange)="getCityByCountry($event.value)">
+      <mat-option *ngFor="let data of country" [value]="data.name">
+        {{data.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <div class="container">
+  <div class="row">
+    <div class="col col-lg-2">
+    
+    <div class="card text-center" *ngFor="let item of weatherItes$|async"  [routerLink]="'/details-page/'+item.name">       
+          <h2>{{item.name}}</h2>
+        <div class="col-4">
+            <div>
+                <mat-icon matTooltip="Temperature">thermostat</mat-icon> {{item.temp}} ℃
+            </div>
+            
+            </div>
+            <div>
+                <mat-icon matTooltip="Sunrise">wb_twilight</mat-icon> {{item.sunrise | date:'full'}}
+            </div>
+            <div>
+                <mat-icon matTooltip="Sunset">nights_stay</mat-icon> {{item.sunset | date:'full'}}
+            
+            </div>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+        </div>
+    
+        </body>
+</html>
+        
+      
+
+  
+
+

@@ -1,0 +1,40 @@
+body{
+  background-image: url('wf-7.webp');
+  background-repeat: repeat ;
+  background-attachment:fixed;
+  height: 150%;
+}
+
+
+h1{
+  text-align: center;
+  color:blue;
+  font-size: 30px;
+}
+table {
+  position: relative;
+  margin-left:35%;
+  margin-top: 20%;
+  position:absolute;
+height: 30px;
+margin: auto;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+width: 50%;
+
+
+}
+th{
+  color:blanchedalmond;
+  background-color:	#A9A9A9;
+  font-size: 20px;
+  
+}
+button{
+  
+margin-top: 30%;
+  margin-left:650px;
+}
+
